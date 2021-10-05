@@ -1,0 +1,173 @@
+.container-login{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container-login .corpo{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(180deg, rgba(230,170,146,1) 33%, rgba(232,146,131,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-login .corpo .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:32vw;
+    min-height: 80vh;
+    height: 100%;
+    background-color: white;
+    border-radius: 3vw;
+    margin: 2% 0 2% 0;
+}
+.container-login .corpo .card .conteudo-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container-login .corpo .card .conteudo-card .form-login .item-card{
+    margin-top: 1vw;
+
+} 
+.container-login .corpo .card .conteudo-card .form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 22% 0 22%;
+    width: 100%;
+}
+.container-login .corpo .card .conteudo-card .form-login .input-login{
+    width: 24vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.9vw;
+    color: #888888;
+
+}
+.container-login .corpo .card .conteudo-card .titulo-login{
+    font-size: 1.9vw;
+    margin-right: auto;
+}
+.container-login .corpo .card .conteudo-card .sub-titulo-login{
+    font-weight: normal;
+    font-size: 1vw;
+    margin-right: auto;
+}
+.container-login .corpo .card .conteudo-card .esqueceu-senha{
+    color:tomato;
+    font-size: 1vw;
+    float: right;
+    margin-top: 20px;
+    margin-right: -16vw;
+    text-decoration: none;
+}
+.container-login .corpo .card .conteudo-card .form-codigo span .icones{
+    width:0.8vw;
+    opacity: 0.4;
+}
+.container-login .corpo .card .conteudo-card .form-login .botao-confirmar{
+    color: white;
+    background-color: rgba(232,146,131,1);
+    width: 10vw;
+    height: 7vh;
+    border: none;
+    border-radius: 5vw;
+    padding: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-bottom: -0.2vw;
+}
+.container-login .corpo .card .conteudo-card .form-login .botao-cadastro{
+    color: rgba(232,146,131,1);
+    background-color: white;
+    width:10vw;
+    height: 7vh;
+    border: 3px solid;
+    border-radius: 5vw;
+    padding: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+.container-login .corpo .card .conteudo-card .form-login .botao-confirmar:hover{
+    color: #FCD9B9;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: #fd6b5e;
+    transition: .3s;
+    cursor: pointer;
+    transform: translateY(-1vh);
+}
+.container-login .corpo .card .conteudo-card .form-login .botao-cadastro:hover{
+    color: white;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: #fd6b5e;
+    transition: .3s;
+    cursor: pointer;
+    transform: translateY(-1vh);
+}
+@media only screen and (max-width: 768px) {
+    .container-login .corpo .card{
+        width:80vw;
+        min-height: 80vh;
+        height: 100%;
+        border-radius: 3vw;
+        margin: 2% 0 0 0;
+    }
+    .container-login .corpo .card .conteudo-card .item-card{
+        margin-top: 3vw;
+    } 
+    .container-login .corpo .card .conteudo-card h1{
+        font-size: 6vw;
+        margin: auto;
+    }
+    .container-login .corpo .card .conteudo-card .form-login{
+        padding:5%;
+    }
+    .container-login .corpo .card .conteudo-card .sub-titulo{
+        font-size: 3.5vw;
+        margin: auto;
+    }
+    .container-login .corpo .card .conteudo-card .esqueceu-senha{
+        font-size: 3.5vw;
+        margin-right: -28vw;
+    }
+    .container-login .corpo .card .conteudo-card .form-login span .icone-interrogacao{
+        height:1.6vh;
+        width:1.6vh;
+    }
+    .container-login .corpo .card .conteudo-card .form-login .botao-confirmar{
+        font-size: 4vw;
+        width: 50vw;
+        height: 7vh;
+        margin-top: 15%;
+        border-radius: 15vw;
+    }
+    .container-login .corpo .card .conteudo-card .form-login .botao-cadastro{
+        font-size: 4vw;
+        width: 50vw;
+        height: 7vh;
+        border-radius: 15vw;
+    }
+    .container-login .corpo .card .conteudo-card .form-login .input-login{
+        font-size: 3.5vw;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 2vw;
+        text-indent: 2vw;
+        margin-top: 5%;
+        
+    }
+}

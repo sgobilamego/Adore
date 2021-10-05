@@ -1,0 +1,89 @@
+.galeria{
+    z-index: 1;
+    background-image: linear-gradient(to left, #FD6B5E, #fc9187d5, #FD6B5E);
+    height: 73vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galeria p{
+    color: #FDD9B9;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-bottom: 0.8vw;
+}
+.galeria h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: #FDD9B9;
+    padding: 1vw;
+}
+.galeria .teste{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 56vw;
+}
+.galeria .elementos{
+    width: 90%;
+    display: flex;
+}
+
+.galeria .feed-cliente{
+    z-index: 1;
+    background-color: #ffdbb9;
+    width: 18vw;
+    margin: 1.5vw;
+    height: 24.3vw;
+    border-radius: 1vw;
+}
+.galeria .feed-cliente .dados{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    height: 2vw;
+    padding: 0 0.5vw 0 0.5vw;
+}
+.galeria .feed-cliente .dados h2, .galeria .feed-cliente .dados .avaliacao{
+    font-size: 1.2vw;
+    color: #ff6e60;
+    font-weight: 800;
+}
+.galeria .feed-cliente .cidade{
+    font-weight: 400;
+    color: #e9ac94;
+    font-size: 0.9vw;
+    padding: 0 0 0 0.5vw;
+    margin: 0;
+}
+.galeria .feed-cliente .texto{
+    font-weight: 400;
+    color: #ff6e60;
+    font-size: 1vw;
+    padding: 0 0.5vw 0 0.5vw;
+}
+.galeria .feed-cliente .img{
+    width: 18vw;
+    border-radius: 1vw 1vw 0 0;
+}
+.galeria .button{
+    color: #FD6B5E;
+    background-color: #FDD9B9;
+    padding: 0.6vw 1.8vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1.6vw;
+}
+.galeria .button{
+    color: #fd6b5ed8;
+    background-color: #FDD9B9;
+}

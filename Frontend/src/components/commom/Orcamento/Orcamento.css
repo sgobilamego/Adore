@@ -1,0 +1,38 @@
+.orcamento{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.orcamento .conteudo{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+.orcamento .conteudo .titulo{
+    color:#FD6B5E;
+    font-size: 2.2vw;
+    width: 15vw;
+    margin: auto;
+}
+.orcamento .conteudo .text{
+    color:#FD6B5E;
+    font-size: 1.5vw;
+    width: 50vw;
+    padding-bottom: 1vw;
+}
+.orcamento .button{
+    background-color: #FD6B5E;
+    color: #FDD9B9;
+    padding: 0.6vw 1.8vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1.6vw;
+}
+.orcamento .background{
+    width: 100%;
+    height: 28vw;
+    top: 0;
+    position: relative;
+    z-index: 0;
+}

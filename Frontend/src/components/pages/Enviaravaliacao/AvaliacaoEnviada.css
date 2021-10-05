@@ -1,0 +1,42 @@
+.conteudo-all{
+    background-color: #E6AA92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+}
+.conteudo-inside{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:40vw;
+    height: 90%;
+    background-color: white;
+    border-radius: 3vw;
+    margin: 2% 0 2% 0;
+}
+.conteudo-inside .h1-black{
+    color: black;
+    font-size: 2.6vw;
+}
+.conteudo-inside .p-black{
+    color: black;
+    width: 70%;
+    font-size: 1.3vw;
+    text-align: center;
+}
+.conteudo-inside .button-ate{
+    width: 30%;
+    text-align: center;
+    background-color: #FD6B5E;
+    color: #FDD9B9;
+    padding: 0.6vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1.6vw;
+    margin-top: 2vw;
+}

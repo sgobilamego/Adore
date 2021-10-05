@@ -1,0 +1,153 @@
+.enviar-container{
+  width: 95%;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box{
+  position: relative;
+  width: 95%;
+  height: 15vw;
+  background: #FD6B5E;
+  border-radius: 1vw;
+}
+
+.clicar, .foto{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+}
+.clique{
+  font-size: 1vw ;
+  color: white;
+}
+.clicar{
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vw;
+
+}
+
+.input-comp{
+  display: none;
+}
+
+.all{
+  background-image: linear-gradient(to bottom, #FD6B5E, #FDD9B9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 20vw; */
+}
+.content{
+  background-color: white;
+  width: 60%;
+  height: 46vw;
+  margin:3vw;
+  border-radius: 2vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.content h1{
+  padding-top: 0;
+  font-size: 2vw;
+}
+.select{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  margin-top: 3.5vw;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.form-one{
+  width: 100%;
+  height: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-one .estrela p{
+  color: black;
+}
+.form-one .pedido{
+  width: 50%;
+}
+.form-one .estrela{
+  width: 30%;
+}
+.form-one .estrela h2{
+  color: #FD6B5E;
+  font-size: 2.3vw;
+  margin: 0;
+}
+.form-one p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+.form-two{
+  width: 90%;
+  margin-top: 3.5vw;
+ 
+}
+.align{
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+}
+.form-two textarea{
+  width: 100%;
+  height: 7vw;
+  border-radius: 0.3vw;
+  border: 0.1vw solid #E7E7E7;
+  color: black;
+  margin-bottom: 2vw;
+}
+.button-enviar{
+  background-color: #FD6B5E;
+  text-decoration: none;
+  border-radius: 0.5vw;
+  padding: 0.8vw 2vw;
+  color: #FDD9B9;
+  font-weight: 600;
+  font-size: 1vw;
+}
+.enviar-h1{
+  margin: 0;
+  color: #FD6B5E;
+  text-align: center;
+  padding: 1.5vw;
+}
+.enviar-label{
+  color: black;
+  font-weight: 400;
+  font-size: 1.2vw;
+  padding-bottom: 0.8vw;
+}
+.enviar-select#produtos{
+  height: 2vw;
+  border-radius: 0.3vw;
+  width: 80%;
+  font-size: 1vw;
+  border: 0.1vw solid #E7E7E7;
+  color: black;
+}
+.enviar-option{
+  font-weight: 400;
+  font-size: 1vw;
+  color: black;
+}

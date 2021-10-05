@@ -1,0 +1,32 @@
+.navegador{
+    background-color: #ffdbb9;
+    height: 4.5vw;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navegador .logotipo{
+    padding: 0.5vw 0 1vw 9.2vw;
+    height: 3.3vw;
+}
+.navegador .links{ 
+    display: flex;
+    width: 100vw;
+    padding-right: 7vw;
+    padding-left: 36vw;
+    justify-content: flex-end;
+}
+.navegador .links a{
+    padding: 1vw;
+    text-decoration: none;
+    color: #ff6e60;
+    font-family:'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+.navegador .links a:hover{
+    color: #E6AA92;
+}
+.navegador .links a.active{
+    font-weight: 600;
+}

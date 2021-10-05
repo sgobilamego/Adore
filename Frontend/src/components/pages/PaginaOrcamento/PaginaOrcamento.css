@@ -1,0 +1,455 @@
+.container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container .corpo-pagina-orcamento{
+    width: 100vw;
+    height: 100%;
+    background: rgb(230,170,146);
+    background: linear-gradient(180deg, rgb(252,217,185) 60%, rgba(232,146,131,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .corpo-pagina-orcamento .imagem{
+    width: 100vw;
+    min-height: 22vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../img/imagem-paginaorcamento.JPG');
+}
+.container .corpo-pagina-orcamento .container-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252,217,185) 60%;
+    width: 100%;
+    height: 15vw;
+}
+.container .corpo-pagina-orcamento .container-topo .texto-topo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1vw;
+    height: 100%;
+    width: 30vw;
+}
+.container .corpo-pagina-orcamento .container-topo .texto-topo h1{
+    color:#fd6b5e;
+}
+.container .corpo-pagina-orcamento .container-topo .texto-topo span{
+    color:#fd6b5e;
+    margin-top: 2%;
+}
+.container .corpo-pagina-orcamento section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #E6AA92;
+    width: 100%;
+}
+
+.container .corpo-pagina-orcamento section h1{
+    font-size: 1vw;
+    margin-top: 5%;
+}
+.container .corpo-pagina-orcamento section .container-orcamento{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 3vw;
+    width: 72vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 0.5vw 0 0.5vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    width: 20vw;
+
+}
+
+.container .corpo-pagina-orcamento section .container-orcamento .coluna1 .form-coluna1{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 18vw;
+}
+
+.ingredientes-selecionados{
+    display: flex;
+    max-height: 35vh;
+    height: auto;
+    width: 19vw;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0.3vw;
+    overflow: auto;
+    font-size: 0.85vw;
+}
+.ingrediente-selecionado{
+    background-color: #fd6b5e;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    color: white;
+    display: flex;
+    width: auto;
+    height:2vw;
+    margin-top: 1vw;
+    margin-left:0.2vw;
+}
+.icone-cancelar{
+    width: 0.7vw;
+    height: 0.7vw;
+    align-self: center;
+    margin-left: 0.4vw;
+}
+.caixa-inferior{
+    width: auto;
+    max-width: 10vw;
+    height: auto;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    padding: 1vw;
+    margin-top:0.5vw;
+    margin-bottom: 2vw;
+    margin-left:0.75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.data{
+    max-width: 9vw;
+    margin-top: 1vw;
+    height: auto;
+}
+.lista-ingredientes{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    height: auto;
+    height: 19vw;
+    overflow: auto;
+}
+.item-lista-ingredientes{
+    list-style-type: none;
+}
+#span-range{
+    font-weight: bold;
+    color: #fd6b5e;
+}
+#input-range[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0.11vw;
+    border-radius: 20px;   
+    background-color:black;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  #input-range[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%; 
+    background-color: white;
+    border:0.27vw solid #fd6b5e;
+    cursor: pointer;
+  }
+.span-valores{
+    display: flex;
+    justify-content: space-between;
+    text-indent: 0;
+    margin-top:0.5vw;
+    font-size: 0.7vw;
+}
+.botao-voltar-orcamento{
+    color: white;
+    background: none;
+    width:6vw;
+    height: 5vh;
+    border: 0.2vw solid #fd6b5e;
+    border-radius: 5vw;
+    padding: 1vh;
+    transition: all 0.3s ease 0s;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 1vw;
+    cursor: pointer;
+    color: #fd6b5e;
+}
+.botao-pedido{
+    color: white;
+    background-color: rgba(232,146,131,1);
+    width:6vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5vw;
+    padding: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+}
+.container-branco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:40vw;
+    min-height: 80vh;
+    height: 100%;
+    background-color: white;
+    border-radius: 3vw;
+    margin: 2% 0 2% 0;
+}
+.botao-confirmacao{
+    color: white;
+    background-color: rgba(232,146,131,1);
+    width: 10vw;
+    height: 7vh;
+    border: none;
+    border-radius: 5vw;
+    padding: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.botao-confirmacao:hover{
+    color: #FCD9B9;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: #fd6b5e;
+    transition: .3s;
+    cursor: pointer;
+    transform: translateY(-1vh);
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna2{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    width: 20vw;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna2 .form-coluna2{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 18vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento h1{
+    font-size: 1.4vw;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .texto-input-orcamento {
+    font-weight: normal;
+    font-size: 0.8vw;
+    margin-bottom: 2%;
+    margin-right: auto;
+    
+}
+.container .corpo-pagina-orcamento section .container-orcamento .span-orcamento {
+    font-weight: normal;
+    font-size: 1vw;
+    margin-bottom: 2%;
+    margin-right: auto;
+    text-align: left;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento{
+    width: 18vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pagamento{
+    width: 18vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pequeno-bairro{
+    width: 7vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+    margin-right: 0.5vw;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pequeno-cidade{
+    width: 9vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+    margin-right: 0.5vw;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pequeno-complemento{
+    width: 8.37vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+    margin-right: 0.5vw;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pequeno-numero{
+    width: 2.5vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+    margin-right: 0.5vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-pequeno-cep{
+    width: 7.31vw;
+    height: 5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+    margin-right: 0.5vw;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .input-codigo-orcamento-grande {
+    width: 18vw;
+    height: 12.5vh;
+    border:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vw;
+    text-indent: 0.5vw;
+    font-size: 0.8vw;
+    color: #888888;
+
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    width: 20vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 18vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .container-input-horizontal{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    width: 100%;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .container-input-horizontal .inputs{
+    display: flex;
+    flex-direction: column;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .span-input-orcamento{
+    font-weight: normal;
+    font-size: 0.8vw;
+    margin-bottom: 2%;
+    margin-top: -0.4vw;
+    margin-right: auto;
+    text-align: left;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .icone-bandeiras{
+    margin-left: auto;
+    margin-top: -1vw;
+    margin-bottom: -0.5vw;
+    width: 6vw;
+}
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .input-codigo-orcamento .interogacao{
+    margin-left: auto;
+    margin-top: -1vw;
+    margin-bottom: -0.5vw;
+    width: 2vw;
+}
+.container .corpo-pagina-orcamento section .botoes button{
+    font-size: 3.5vh;
+    min-width:300px;
+    width:25vw;
+    height:12vh;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    color:#ff6e60;
+    margin-top: 3vh;
+    padding: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+.container .corpo-pagina-orcamento section .botoes button:hover{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: .3s;
+    cursor: pointer;
+    transform: translateY(-1vh);
+}
+
+.container .corpo-pagina-orcamento section .container-orcamento .coluna3 .form-coluna3 .botao-pedido:hover{
+    color: #FCD9B9;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: #fd6b5e;
+    transition: .3s;
+    cursor: pointer;
+    transform: translateY(-1vh);
+}
+
+@media only screen and (max-width: 768px) {
+    .container .corpo-pagina-orcamento .imagem{
+        min-height: 20vh;
+    }
+    .container .corpo-pagina-orcamento section h1{
+        font-size: 5.5vh;
+    }
+    .container .corpo-pagina-orcamento section .botoes button{
+        width:12vw;
+        height:20vh;
+    }
+  }

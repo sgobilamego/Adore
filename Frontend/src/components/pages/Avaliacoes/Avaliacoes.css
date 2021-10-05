@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden; 
+    
+}
+.header{
+    top:0;
+    background-image: url(avaliacoes.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 38vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header h1{
+    margin:0;
+    width: 50%;
+    font-size: 2.6vw;
+    text-align: center;
+    color: white;
+}
+.header .info{
+    width: 80%;
+    margin-top: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.header .info h2{
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.header .pessoas, .header .cidades,.header .chances{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.header .info p{
+    margin: 0;
+    width: 70%;
+    font-size: 1.5vw;
+    /* width: 73%; */
+    color: white;
+}
